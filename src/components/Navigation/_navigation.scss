@@ -1,0 +1,116 @@
+.nav{
+    background-color: $white;
+    
+    position: sticky;
+    font-family: $Public-Sans;
+}
+
+.nav__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.9em 0;
+}
+
+.nav__menu{
+    .menu__items{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        list-style: none;
+        text-decoration: none;
+        li a{
+            text-decoration: none;
+            
+            font-weight: 400;
+        }
+        .items__list + .items__list{
+            margin-left: 1.75em;
+        }
+       
+        display: none;
+    }
+    
+}
+.nav__button{
+    cursor: pointer;
+    background: linear-gradient(90deg,$LimeGreen, $BrightCyan);
+    border-radius: 100px;
+    color: $white;
+    display: inline-block;
+    .button__wrapper{
+        padding: 1em 2.5em;
+        
+    }
+}
+.nav__button:hover{
+    filter: opacity(75%);
+}
+
+.nav__hamburger{
+    cursor: pointer;
+    .hamburger__button{
+        border: 0;
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        padding: 0.5rem;
+        background-color: $white;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+        
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 570px and up) */
+@media only screen and (min-width: 570px) {
+
+}
+
+/* Medium devices (landscape tablets, 800px and up) */
+@media only screen and (min-width: 800px) {
+    .nav__wrapper{
+        align-items: center;
+        padding: 1.2em 0;
+        justify-content: space-between;
+    }
+    .nav__hamburger {
+        display: none;
+        .hamburger__button{
+            display: none;
+        }
+    }
+    .nav__menu{
+        
+        .menu__items {
+            display: flex;
+            align-items: flex-start;
+            
+            li a{
+                color: $GrayishBlue;
+            }
+        }
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+
+
+// navbar.css
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 768px) {
+    
+    
+}

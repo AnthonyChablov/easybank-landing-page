@@ -1,0 +1,15 @@
+.button{
+    cursor: pointer;
+    display: inline-block;
+    background: linear-gradient(90deg,$LimeGreen, $BrightCyan);
+    border-radius: 100px;
+    .button__wrapper{
+        padding: 1em 2em;
+        font-size:0.9rem;
+        color: $white;
+        font-family: $Public-Sans;
+    }
+}
+.button:hover{
+    filter: brightness(75%);
+}

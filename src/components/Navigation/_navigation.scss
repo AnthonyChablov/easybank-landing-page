@@ -3,14 +3,14 @@
     
     position: sticky;
     font-family: $Public-Sans;
-    
+    z-index: 999;
 }
 
 .nav__wrapper{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.2em 0;
+    padding: 0.65em 0;
     flex-wrap: wrap;
 }
 
@@ -25,7 +25,7 @@
     /* border: 1px solid $dark-grey; */
     position: absolute;
     border-radius: 8px;
-    top: 5.075em;
+    top: 5.2em;
     left: -145%;
     height: 18em;
     opacity: 1;
@@ -48,7 +48,7 @@
     padding-bottom: 2em;
     
     filter: opacity(120%);
-    top: 5.075em;
+    top: 5.2em;
     left: 7.5%;
     width: 85%;
     

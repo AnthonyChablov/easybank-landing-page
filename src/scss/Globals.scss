@@ -1,7 +1,15 @@
 @import "./variables";
 @import "./../components/Navigation/navigation";
 @import "./../components/Hero/hero";
-
+@import "./../components/image/image";
+@import "./../components/header/header";
+@import "./../components/contentsection/contentsection";
+@import "./../components/paragraph/paragraph";
+@import "./../components/button/button";
+@import "./../components/icon/icon";
+@import "./../components/SubHeader/subheader";
+@import "./../components/SubSubHeader/subsubheader";
+@import "./../components/articles/articles";
 * {
     box-sizing: border-box;
 }
@@ -19,7 +27,7 @@ ul{
 }
 
 .container{
-    width: 85%;
+    width: 84%;
     margin: 0 auto;
     max-width: 80.75em;
 }

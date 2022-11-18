@@ -7,16 +7,17 @@ const Navigation = () => {
             <div className="container">
                 <div className="nav__wrapper">
                     <div className="nav__logo">
-                        <img src={require('../../assets/images/logo.svg').default} alt="logo" />
+                        <a href="#"><img src={require('../../assets/images/logo.svg').default} alt="logo" /></a>
+                        
                     </div>
                     
-                        <ul className={click ? "nav-menu active" : "nav-menu"}>
-                            <li className='items__list'><a href="#">Home</a></li>
-                            <li className='items__list'><a href="#">About</a></li>
-                            <li className='items__list'><a href="#">Contact</a></li>
-                            <li className='items__list'><a href="#">Blog</a></li>
-                            <li className='items__list'><a href="#">Careers</a></li>
-                        </ul>
+                    <ul className={click ? "nav__menu active" : "nav__menu"}>
+                        <li className='menu__items'><a href="#" className="menu__link">Home</a></li>
+                        <li className='menu__items'><a href="#" className="menu__link">About</a></li>
+                        <li className='menu__items'><a href="#" className="menu__link">Contact</a></li>
+                        <li className='menu__items'><a href="#" className="menu__link">Blog</a></li>
+                        <li className='menu__items'><a href="#" className="menu__link">Careers</a></li>
+                    </ul>
                     
                     <div className="nav__button">
                         <div className="button__wrapper">

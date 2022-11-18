@@ -153,7 +153,7 @@
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 .hero {
-  background-color: #fff;
+  background-color: hsl(0deg, 0%, 98%);
   padding-bottom: 5em;
 }
 .hero .hero__wrapper {
@@ -164,26 +164,26 @@
   margin-top: 2em;
 }
 
-.image {
+.image--bg {
   background-image: url("../assets/images/bg-intro-mobile.svg");
   background-repeat: no-repeat;
   background-position: top right;
-  background-color: #fff;
+  background-color: hsl(0deg, 0%, 98%);
   background-size: cover;
   height: 22em;
 }
-.image .image__wrapper {
+.image--bg .image--bg__wrapper {
   position: relative;
   top: -8.4em;
 }
 
 /* Small devices (portrait tablets and large phones, 570px and up) */
 @media only screen and (min-width: 570px) {
-  .image {
+  .image--bg {
     background-image: url("../assets/images/bg-intro-desktop.svg");
     background-repeat: no-repeat;
     background-position: top right;
-    background-color: #fff;
+    background-color: hsl(0deg, 0%, 98%);
   }
 }
 /* Medium devices (landscape tablets, 767px and up) */
@@ -198,7 +198,7 @@
 }
 
 .content-section {
-  background-color: hsl(0deg, 0%, 98%);
+  background-color: hsl(220deg, 16%, 96%);
   padding-bottom: 3em;
 }
 .content-section .content-section__header {
@@ -256,8 +256,34 @@
 }
 
 .articles {
-  background-color: #fff;
+  background-color: hsl(0deg, 0%, 98%);
   padding: 4em 0 0 0;
+}
+
+.card {
+  background-color: #fff;
+  margin-bottom: 2em;
+}
+.card .card__wrapper {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.card .card__wrapper .card__content {
+  padding: 1em 1.9em;
+  font-family: "Public Sans", sans-serif;
+}
+.card .card__wrapper .card__content .card__author {
+  color: hsl(233deg, 8%, 62%);
+  font-size: 0.7rem;
+}
+.card .card__wrapper .card__content .card__header {
+  color: hsl(233deg, 26%, 24%);
+  font-size: 1.1rem;
+  font-weight: 100;
+}
+.card .card__wrapper .card__content .card__text {
+  color: hsl(233deg, 8%, 62%);
+  font-size: 0.85rem;
 }
 
 * {

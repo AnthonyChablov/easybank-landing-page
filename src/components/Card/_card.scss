@@ -1,0 +1,28 @@
+.card{
+   background-color: $white;
+   margin-bottom: 2em;
+   .card__wrapper{
+      
+      border-radius: 10px;
+      overflow: hidden;
+      .card__content{
+         padding: 1em 1.9em;
+         font-family: $Public-Sans;
+         .card__author{
+            color: $GrayishBlue;
+            font-size: .7rem;
+         }
+         .card__header{           
+            color: $DarkBlue;
+            font-size: 1.1rem;
+            font-weight: 100;
+         }
+         .card__text{           
+            color: $GrayishBlue;
+            font-size: 0.85rem;
+            
+         }
+      }
+   }
+   
+}

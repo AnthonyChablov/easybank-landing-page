@@ -8,7 +8,7 @@ const hero = () => {
     <div className='hero'>
         <div className="hero__wrapper ">
             <div className="hero__img">
-                <Image />
+                <Image type={'bg'}/>
             </div>
             <div className="container">
                 <div className="hero__content">

@@ -35,7 +35,7 @@ function App() {
     const difference = skewConfigs.current - skewConfigs.rounded;
     const acceleration = difference / size.width;
     const velocity = +acceleration;
-    const skew = velocity * 3.2; // can change this value to adjust skew
+    const skew = velocity * 4.2; // can change this value to adjust skew
 
     // 
     scrollContainer.current.style.transform = `translate3d(0, -${skewConfigs.rounded}px,0) skewY(${skew}deg)`;

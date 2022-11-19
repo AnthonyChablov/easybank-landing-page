@@ -1,8 +1,9 @@
 .card{
    background-color: $white;
    margin-bottom: 2em;
-   .card__wrapper{
-      
+   
+   .card__wrapper {
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
       border-radius: 10px;
       overflow: hidden;
       
@@ -26,6 +27,9 @@
       }
    }
    
+}
+.card__wrapper a{
+   text-decoration: none;
 }
 
 /* Small devices (portrait tablets and large phones, 570px and up) */

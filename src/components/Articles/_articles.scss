@@ -7,7 +7,10 @@
 /* Small devices (portrait tablets and large phones, 570px and up) */
 @media only screen and (min-width: 570px) {
     .articles{
-        padding-bottom: 1.5em;
+        padding-bottom: 4em;
+    }
+    .articles__header{
+        padding-bottom: 2em;
     }
     .articles__wrapper{
         display: flex;

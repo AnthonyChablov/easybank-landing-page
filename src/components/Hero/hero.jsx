@@ -21,7 +21,6 @@ const hero = () => {
                     <div className="content__button">
                         <Button content={'Request Invite'}/>
                     </div>
-                    
                 </div>
             </div>
         </div>

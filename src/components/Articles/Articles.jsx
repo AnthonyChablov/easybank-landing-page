@@ -23,7 +23,7 @@ const Articles = () => {
     {
       imgName:'confetti', 
       author:'Claire Robinson', 
-      header:'Recieve money in any currency with no fees', 
+      header:'Receive money in any currency with no fees', 
       text:"The world is getting smaller and we're becoming more mobile. So why should you be forced to only receive money in a single..."
     },
   ];
@@ -31,14 +31,16 @@ const Articles = () => {
     <div className="articles ">
       <div className="container">
         <SubHeader text={'Latest Articles'}/>
-        {data.map((cardData)=>(
-            <Card
-              imgName={cardData.imgName} 
-              author={cardData.author} 
-              header={cardData.header} 
-              text={cardData.text}
-            />
-          ))
+        {data.map(
+          (cardData)=>(
+              <Card
+                imgName={cardData.imgName} 
+                author={cardData.author} 
+                header={cardData.header} 
+                text={cardData.text}
+              />
+            )
+          )
         }
       </div>
     </div>

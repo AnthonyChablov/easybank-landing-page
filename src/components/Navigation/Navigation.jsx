@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 const Navigation = () => {
     const [click, setClick] = useState(false);
     const handleClick = () => setClick(!click);
@@ -8,7 +8,6 @@ const Navigation = () => {
                 <div className="nav__wrapper">
                     <div className="nav__logo">
                         <a href="#"><img src={require('../../assets/images/logo.svg').default} alt="logo" /></a>
-                        
                     </div>
                     
                     <ul className={click ? "nav__menu active" : "nav__menu"}>

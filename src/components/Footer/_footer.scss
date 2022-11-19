@@ -1,0 +1,48 @@
+.footer{ 
+    background-color: $DarkBlue;
+}
+.footer__wrapper{
+    .footer__img{
+        padding: 2.25em 0 2.25em 0;
+        width: 9.2em;   
+        margin: 0 auto;
+    }
+    .footer__icons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 2.25em;
+
+        .icons__link+.icons__link{
+            margin-left: 1em;
+            width: 1.65em;
+        }
+    }
+    .footer__links{
+        text-align: center;
+        .links__routes a{
+            text-decoration: none;
+            color: $white;
+            font-size: 0.9rem;
+            font-family: $Public-Sans;
+            font-weight: 100;
+        }
+        .links__routes{
+            padding-bottom: 1.2em;
+        }
+        
+    }
+    .footer__button{
+        padding-top: 1.25em;
+        text-align: center;
+    }
+    .footer__copyright p{
+        font-family: $Public-Sans;
+        color: $GrayishBlue;
+        font-size: 0.9rem;
+        padding: 2em 0 3.25em 0;
+        text-align: center;
+        margin: 0 auto;
+
+    }
+}

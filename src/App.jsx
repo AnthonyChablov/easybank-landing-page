@@ -24,7 +24,7 @@ function App() {
 
   useEffect(()=>{
     requestAnimationFrame(()=>skewScrolling())
-  },[]);
+  },[])
 
   const skewScrolling = ()=>{
     skewConfigs.current = window.scrollY;
@@ -35,10 +35,10 @@ function App() {
     const difference = skewConfigs.current - skewConfigs.rounded;
     const acceleration = difference / size.width;
     const velocity = +acceleration;
-    const skew = velocity * 7.5; // can change this value to adjust skew
+    const skew = velocity * 3.2; // can change this value to adjust skew
 
     // 
-    scrollContainer.current.style.transform = `translateY(0, -${skewConfigs.rounded}px) skewY(${skew}deg)`;
+    scrollContainer.current.style.transform = `translate3d(0, -${skewConfigs.rounded}px,0) skewY(${skew}deg)`;
 
     requestAnimationFrame(()=>skewScrolling())
   }

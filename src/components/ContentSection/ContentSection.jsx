@@ -36,20 +36,23 @@ const ContentSection = () => {
         <div className="content-section__paragraph">
           <Paragraph text={'We leverage Open Banking to turn your bank account into your financial hub. Control your finances like never before.'}/>
         </div>
-        {data.map(
-          (elem)=>(
-            <>
-              <div className="content-section__icon">
-                <Icon iconName={elem.iconName}/>
+        <div className="content-section__info">
+          {data.map(
+            (elem)=>(
+              <div className="info__wrapper">
+                <div className="content-section__icon">
+                  <Icon iconName={elem.iconName}/>
+                </div>
+                <div className="content-section__subsubheader">
+                  <SubSubHeader text={elem.header}/>
+                </div>
+                <div className="content-section__sub-paragraph">
+                  <Paragraph text={elem.paragraph}/>
+                </div>
               </div>
-              <div className="content-section__subsubheader">
-                <SubSubHeader text={elem.header}/>
-              </div>
-              <div className="content-section__paragraph">
-                <Paragraph text={elem.paragraph}/>
-              </div>
-            </>
-        ))}
+          ))}
+        </div>
+        
       </div>
     </div>
   )

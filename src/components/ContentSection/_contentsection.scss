@@ -6,11 +6,70 @@
     }
     .content-section__paragraph{
         padding: 0.1em 0 0 0;
+        text-align: center;
     }
     .content-section__icon{
         padding-top: 3em;
         width: 4.5em;
         margin: 0 auto;
     }
+    .content-section__sub-paragraph{
+        text-align: center;
+    }
     
+}
+
+
+/* Small devices (portrait tablets and large phones, 570px and up) */
+@media only screen and (min-width: 570px) {
+
+}
+
+/* Medium devices (landscape tablets, 767px and up) */
+@media only screen and (min-width: 767px) {
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .content-section{
+        
+        .content-section__header{
+            display: flex;
+            padding-top: 5em;
+        }
+        .content-section__paragraph{
+            width: 62%;
+            text-align: start;
+            padding-bottom: 1.5em;
+        }
+        .content-section__info{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .info__wrapper{
+            text-align: start;
+            .content-section__icon{
+                margin: 0;
+                padding-bottom: 1em;
+            }
+            .content-section__subsubheader{
+                display: flex;
+                
+            }
+            .content-section__sub-paragraph{
+                text-align: start;
+                margin-bottom: 4em;
+                width: 90%;
+            }
+            
+        }
+        
+        
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }

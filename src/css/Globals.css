@@ -185,9 +185,19 @@
     background-position: top right;
     background-color: hsl(0deg, 0%, 98%);
   }
+  .image .image__wrapper {
+    height: 13.5em;
+    object-fit: cover;
+  }
 }
 /* Medium devices (landscape tablets, 767px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .image .image__wrapper {
+    height: 13.5em;
+    object-fit: cover;
+  }
+}
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 .header {
   font-size: 2.5rem;
@@ -248,6 +258,15 @@
   color: hsl(233deg, 26%, 24%);
 }
 
+/* Small devices (portrait tablets and large phones, 570px and up) */
+/* Medium devices (landscape tablets, 767px and up) */
+@media only screen and (min-width: 767px) {
+  .subheader {
+    font-size: 2.38rem;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 .subsubheader {
   font-size: 1.35rem;
   font-family: "Public Sans", sans-serif;
@@ -261,6 +280,42 @@
   padding: 4em 0 0 0;
 }
 
+/* Small devices (portrait tablets and large phones, 570px and up) */
+@media only screen and (min-width: 570px) {
+  .articles {
+    padding-bottom: 1.5em;
+  }
+  .articles__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .articles__wrapper .wrapper__column {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+/* Medium devices (landscape tablets, 767px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .articles__header {
+    display: flex;
+    padding-bottom: 1em;
+  }
+  .articles__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .articles__wrapper .wrapper__column {
+    display: flex;
+    justify-content: space-between;
+  }
+  .articles__wrapper .wrapper__column + .wrapper__column {
+    margin-left: 1.2em;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 .card {
   background-color: #fff;
   margin-bottom: 2em;
@@ -287,6 +342,23 @@
   font-size: 0.85rem;
 }
 
+/* Small devices (portrait tablets and large phones, 570px and up) */
+@media only screen and (min-width: 570px) {
+  .card {
+    width: 48%;
+  }
+}
+/* Medium devices (landscape tablets, 767px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .card .card__wrapper {
+    border-radius: 5px;
+  }
+  .card .card__wrapper .card__content {
+    padding: 1em 1.3em 1em 1.3em;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 .footer {
   background-color: hsl(233deg, 26%, 24%);
 }

@@ -35,14 +35,14 @@ const Footer = () => {
                     <div className="footer__column--2">
                         <div className="footer__links">
                             <div className='links links--1'>
-                                {linkData.slice(0,3).map((link, i)=>( 
+                                {linkData.slice(0,3).map((link)=>( 
                                     <div className="links__routes">
                                         <a href={link.link}>{link.linkName}</a>
                                     </div>
                                 ))}
                             </div>
                             <div className="links links--2">
-                                {linkData.slice(3).map((link, i)=>( 
+                                {linkData.slice(3).map((link)=>( 
                                     <div className="links__routes">
                                         <a href={link.link}>{link.linkName}</a>
                                     </div>

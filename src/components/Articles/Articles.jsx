@@ -30,18 +30,37 @@ const Articles = () => {
   return (
     <div className="articles ">
       <div className="container">
-        <SubHeader text={'Latest Articles'}/>
-        {data.map(
-          (cardData)=>(
-              <Card
-                imgName={cardData.imgName} 
-                author={cardData.author} 
-                header={cardData.header} 
-                text={cardData.text}
-              />
-            )
-          )
-        }
+        <div className="articles__header">
+          <SubHeader text={'Latest Articles'}/>
+        </div>
+        <div className="articles__wrapper">
+          <div className="wrapper__column">
+            {data.slice(0,2).map(
+              (cardData)=>(
+                  <Card
+                    imgName={cardData.imgName} 
+                    author={cardData.author} 
+                    header={cardData.header} 
+                    text={cardData.text}
+                  />
+                )
+              )
+            }
+          </div>
+          <div className="wrapper__column">
+            {data.slice(2).map(
+              (cardData)=>(
+                  <Card
+                    imgName={cardData.imgName} 
+                    author={cardData.author} 
+                    header={cardData.header} 
+                    text={cardData.text}
+                  />
+                )
+              )
+            }
+          </div>
+        </div>
       </div>
     </div>
   )

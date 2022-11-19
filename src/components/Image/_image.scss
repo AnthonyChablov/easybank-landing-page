@@ -12,6 +12,8 @@
 }
 
 
+
+
 /* Small devices (portrait tablets and large phones, 570px and up) */
 @media only screen and (min-width:570px){
     .image--bg{
@@ -20,7 +22,14 @@
         background-position: top right;
         background-color: $VeryLightGray;
     }
-    
+    .image{
+        .image__wrapper{
+            
+            height: 13.5em;
+            object-fit: cover;
+        }
+        
+    }
 }
 /* Medium devices (landscape tablets, 767px and up) */
 @media only screen and (min-width: 767px) {
@@ -29,7 +38,14 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
+    .image{
+        .image__wrapper{
+            
+            height: 13.5em;
+            object-fit: cover;
+        }
+        
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */

@@ -18,12 +18,7 @@
 
 /* Small devices (portrait tablets and large phones, 570px and up) */
 @media only screen and (min-width:570px){
-    .image--bg{
-        background-image: url('../assets/images/bg-intro-desktop.svg');
-        background-repeat: no-repeat;
-        background-position: top right;
-        background-color: $VeryLightGray;
-    }
+    
     .image{
         .image__wrapper{
             
@@ -35,11 +30,27 @@
 }
 /* Medium devices (landscape tablets, 767px and up) */
 @media only screen and (min-width: 767px) {
+    .image--bg{
+        background-image: url('../assets/images/bg-intro-desktop.svg');
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-color: $VeryLightGray;
+        background-size:contain;
+        left: 0em;
+        top: -10vh;
+
+        .image--bg__wrapper{
+            position: relative;
+            top: -7.2vh;
+            left: 3vh;
+        }
+    }
     
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+    
     .image{
         .image__wrapper{
             

@@ -5,3 +5,26 @@
     text-align: center;
     color: $DarkBlue;
 }
+
+
+/* Small devices (portrait tablets and large phones, 570px and up) */
+@media only screen and (min-width: 570px) {
+
+}
+
+/* Medium devices (landscape tablets, 767px and up) */
+@media only screen and (min-width: 767px) {
+    .header{
+        text-align: left;
+        font-size: 3.5rem;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

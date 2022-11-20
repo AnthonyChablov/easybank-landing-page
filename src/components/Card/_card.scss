@@ -10,6 +10,7 @@
       .card__content{
          padding: 1em 1.9em;
          font-family: $Public-Sans;
+         height: 12.8em;
          .card__author{
             color: $GrayishBlue;
             font-size: .7rem;
@@ -36,7 +37,11 @@
 @media only screen and (min-width: 570px) {
       .card{
          width: 48%;
-         
+         .card__wrapper{
+            .card__content{
+               height: 12.8em;
+            }
+         }
       }
 }
 
@@ -53,6 +58,7 @@
          border-radius: 5px;
          .card__content{
             padding: 1em 1.3em 1em 1.3em;
+            height: 15em;
          }
       }
    }

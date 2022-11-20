@@ -476,6 +476,7 @@
 .card .card__wrapper .card__content {
   padding: 1em 1.9em;
   font-family: "Public Sans", sans-serif;
+  height: 12.8em;
 }
 .card .card__wrapper .card__content .card__author {
   color: hsl(233deg, 8%, 62%);
@@ -500,6 +501,9 @@
   .card {
     width: 48%;
   }
+  .card .card__wrapper .card__content {
+    height: 12.8em;
+  }
 }
 /* Medium devices (landscape tablets, 767px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
@@ -509,6 +513,7 @@
   }
   .card .card__wrapper .card__content {
     padding: 1em 1.3em 1em 1.3em;
+    height: 15em;
   }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */

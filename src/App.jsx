@@ -1,5 +1,5 @@
 import {useRef, useEffect, useState} from 'react';
-
+import debounce from 'lodash.debounce';
 import './App.css';
 import useWindowSize from './hooks/useWindowSize';
 import Home from './pages/Home';
@@ -11,20 +11,21 @@ function App() {
   const app = useRef();
   const scrollContainer = useRef();
   const skewConfigs ={
-    ease:.1,
+    ease:0.1,
     current:0,
     previous : 0,
     rounded: 0
   }
 
+  /* debounce */
   useEffect(()=>{
-    console.log(size.height)
+    
     document.body.style.height = `${scrollContainer.current.getBoundingClientRect().height}px`;
   },[size.height]);
 
-  useEffect(()=>{
+  useEffect(debounce(()=>{
     requestAnimationFrame(()=>skewScrolling())
-  },[])
+  },[]),5000)
 
   const skewScrolling = ()=>{
     skewConfigs.current = window.scrollY;
@@ -35,12 +36,12 @@ function App() {
     const difference = skewConfigs.current - skewConfigs.rounded;
     const acceleration = difference / size.width;
     const velocity = +acceleration;
-    const skew = velocity * 4.2; // can change this value to adjust skew
+    const skew = velocity * 1; // can change this value to adjust skew
 
     // 
-    scrollContainer.current.style.transform = `translate3d(0, -${skewConfigs.rounded}px,0) skewY(${skew}deg)`;
+    scrollContainer.current.style.transform = `translateY(-${skewConfigs.rounded}px) skewY(${skew}deg)`;
 
-    requestAnimationFrame(()=>skewScrolling())
+    requestAnimationFrame(()=>skewScrolling());
   }
 
   return (

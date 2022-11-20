@@ -11,7 +11,9 @@ const Image = ({type, imgName}) => {
   if (type === 'bg'){
     return (
       <div className="image--bg">
+        <div className="container">
           <img className='image--bg__wrapper' src={mockups} alt="background" />
+        </div>
       </div>
     )
   }else{

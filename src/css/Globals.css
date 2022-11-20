@@ -158,23 +158,36 @@
 }
 .hero .hero__wrapper {
   text-align: center;
+  /* .hero__img{
+
+  } */
+}
+.hero .hero__wrapper .hero__content {
+  position: relative;
+  top: -8em;
+  margin-bottom: -8em;
 }
 
 .content__button {
   margin-top: 2em;
 }
 
+/* Small devices (portrait tablets and large phones, 570px and up) */
+/* Medium devices (landscape tablets, 767px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 .image--bg {
   background-image: url("../assets/images/bg-intro-mobile.svg");
   background-repeat: no-repeat;
   background-position: top right;
   background-color: hsl(0deg, 0%, 98%);
   background-size: cover;
-  height: 22em;
+  position: relative;
+  top: -10vh;
 }
 .image--bg .image--bg__wrapper {
   position: relative;
-  top: -8.4em;
+  top: -7.2vh;
 }
 
 /* Small devices (portrait tablets and large phones, 570px and up) */
@@ -252,6 +265,7 @@
     width: 62%;
     text-align: start;
     padding-bottom: 1.5em;
+    margin: 0;
   }
   .content-section .content-section__info {
     display: flex;
@@ -270,6 +284,7 @@
   }
   .content-section .info__wrapper .content-section__sub-paragraph {
     text-align: start;
+    margin: 0;
     margin-bottom: 4em;
     width: 90%;
   }
@@ -544,7 +559,7 @@ ul {
 }
 
 .container {
-  width: 84%;
+  width: 90.5%;
   margin: 0 auto;
   max-width: 67.75em;
 }

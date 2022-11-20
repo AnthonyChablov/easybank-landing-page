@@ -4,10 +4,12 @@
     background-position: top right;
     background-color: $VeryLightGray;
     background-size: cover;
-    height: 22em;
+    position: relative;
+    top: -10vh;
+    
     .image--bg__wrapper{
         position: relative;
-        top: -8.4em;
+        top: -7.2vh;
     }
 }
 

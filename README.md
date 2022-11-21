@@ -1,6 +1,6 @@
 # Easybank landing page
 
-This project is a landing page created using assets provided by FrontEndMentor.com
+This project is a responsive mobile, tablet and desktop landing page created using assets provided by FrontEndMentor.com
 You can find the challenge [here](https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN/hub/easybank-landing-page-6yAWTw-xc
 )
 ## Technologies Used

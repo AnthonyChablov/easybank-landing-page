@@ -8,14 +8,19 @@ import plane from '../../assets/images/image-plane.jpg';
 import restaurant from '../../assets/images/image-restaurant.jpg';
 
 const Image = ({type, imgName}) => {
+  /* hero */
   if (type === 'bg'){
     return (
       <div className="image--bg">
-        <div className="">
-          <img className='image--bg__wrapper' src={mockups} alt="background" />
+        <div className="image--bg__wrapper">
+          <div className="container">
+            <img className='' src={mockups} alt="background" />
+          </div>
         </div>
       </div>
     )
+
+  /* icons */
   }else{
     return (
       <div className="image">
@@ -30,7 +35,6 @@ const Image = ({type, imgName}) => {
       </div>
     )
   }
-  
 }
 
 export default Image

@@ -17,15 +17,18 @@ function App() {
     rounded: 0
   }
 
-  /* debounce */
   useEffect(()=>{
-    
-    document.body.style.height = `${scrollContainer.current.getBoundingClientRect().height}px`;
-  },[size.height]);
+    document.body.style.height = `${scrollContainer.current.getBoundingClientRect().height}px`
+  }, []);
 
+  /* debounce */
   useEffect(debounce(()=>{
+    document.body.style.height = `${scrollContainer.current.getBoundingClientRect().height}px`;
+  },[size.height]),.10);
+
+  useEffect(()=>{
     requestAnimationFrame(()=>skewScrolling())
-  },[]),5000)
+  },[])
 
   const skewScrolling = ()=>{
     skewConfigs.current = window.scrollY;
@@ -36,8 +39,7 @@ function App() {
     const difference = skewConfigs.current - skewConfigs.rounded;
     const acceleration = difference / size.width;
     const velocity = +acceleration;
-    const skew = velocity * 1; // can change this value to adjust skew
-
+    const skew = velocity * 1.15; // can change this value to adjust skew
     // 
     scrollContainer.current.style.transform = `translateY(-${skewConfigs.rounded}px) skewY(${skew}deg)`;
 

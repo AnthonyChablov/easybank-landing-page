@@ -6,7 +6,7 @@
   background-color: #fff;
   position: sticky;
   font-family: "Public Sans", sans-serif;
-  z-index: 999;
+  z-index: 9999;
 }
 
 .nav__wrapper {
@@ -161,12 +161,16 @@
   text-align: center;
 }
 .hero .hero__wrapper .hero__content {
+  width: 90.5%;
+  margin: 0 auto;
+  max-width: 67.75em;
+}
+.hero .hero__wrapper .hero__content .content__wrapper {
   position: relative;
   top: -8em;
   margin-bottom: -8em;
 }
-
-.content__button {
+.hero .hero__wrapper .hero__content .content__button {
   margin-top: 2em;
 }
 
@@ -174,7 +178,7 @@
 /* Medium devices (landscape tablets, 767px and up) */
 @media only screen and (min-width: 767px) {
   .hero {
-    padding-bottom: 0;
+    padding-bottom: 10em;
     /* container properties */
   }
   .hero .hero__wrapper {
@@ -184,33 +188,43 @@
     width: 90.5%;
     margin: 0 auto;
     max-width: 67.75em;
-    margin-bottom: -5em;
+    margin-bottom: -6em;
   }
   .hero .hero__wrapper .hero__content {
     padding: 10em 0 0em 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin: 0;
     width: 45%;
   }
+  .hero .hero__wrapper .hero__content .content__button {
+    text-align: left;
+    margin-top: 2em;
+  }
   .hero .hero__wrapper .hero__img {
+    margin-top: 10em;
     width: 48%;
+  }
+}
+/* 570px and up */
+@media only screen and (min-width: 935px) {
+  .hero .hero__wrapper {
+    margin-bottom: -10em;
   }
 }
 /* Large devices (laptops/desktops, 1022px and up) */
 @media only screen and (min-width: 1022px) {
   .hero {
-    padding-bottom: 2em;
+    height: auto;
+    padding-bottom: 3em;
     /* container properties */
   }
   .hero .hero__wrapper {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    width: 90.5%;
-    margin: 0 auto;
-    max-width: 67.75em;
-    margin-bottom: -5em;
+    margin-bottom: -12em;
   }
   .hero .hero__wrapper .hero__content {
     padding: 10em 0 0em 0;
@@ -220,6 +234,8 @@
     width: 45%;
   }
   .hero .hero__wrapper .hero__img {
+    margin-top: 4em;
+    padding-bottom: 3.7em;
     width: 48%;
   }
 }
@@ -235,11 +251,17 @@
 }
 .image--bg .image--bg__wrapper {
   position: relative;
-  top: -7.2vh;
+  top: -2vh;
 }
 
 /* Small devices (portrait tablets and large phones, 570px and up) */
 @media only screen and (min-width: 570px) {
+  .image--bg {
+    background-position: 100%;
+  }
+  .image--bg .image--bg__wrapper {
+    top: -4.75vh;
+  }
   .image .image__wrapper {
     height: 13.5em;
     object-fit: cover;
@@ -250,26 +272,58 @@
   .image--bg {
     background-image: url("../assets/images/bg-intro-desktop.svg");
     background-repeat: no-repeat;
-    background-position: bottom center;
+    background-position: 100%;
     background-color: hsl(0deg, 0%, 98%);
     background-size: contain;
     left: 0em;
-    top: -10vh;
+    top: -12vh;
   }
   .image--bg .image--bg__wrapper {
     position: relative;
-    top: -7.2vh;
+    top: 5vh;
+    left: 3vh;
+  }
+}
+@media only screen and (min-width: 965px) {
+  .image--bg {
+    left: 0;
+    top: -11vh;
+    background-color: transparent;
+  }
+  .image--bg .image--bg__wrapper {
+    top: 5vh;
     left: 3vh;
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .image--bg {
+    left: 0;
+    top: -13vh;
+    position: relative;
+    background-color: transparent;
+  }
+  .image--bg .image--bg__wrapper {
+    top: 5vh;
+    left: 3vh;
+  }
   .image .image__wrapper {
     height: 13.5em;
     object-fit: cover;
   }
 }
-/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* Extra large devices (large laptops and desktops, 1061px and up) */
+@media only screen and (min-width: 1061px) {
+  .image--bg {
+    left: 0;
+    top: -6vh;
+    background-color: transparent;
+  }
+  .image--bg .image--bg__wrapper {
+    top: 5vh;
+    left: 3vh;
+  }
+}
 .header {
   font-size: 2.5rem;
   font-family: "Public Sans", sans-serif;
@@ -372,10 +426,18 @@
   .paragraph {
     font-size: 1.12rem;
     line-height: 1.5em;
+    text-align: center;
+  }
+}
+/* Medium devices (landscape tablets, 767px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .paragraph {
+    font-size: 1.12rem;
+    line-height: 1.5em;
     text-align: left;
   }
 }
-/* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 .button {
   cursor: pointer;

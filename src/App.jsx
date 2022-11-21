@@ -17,14 +17,14 @@ function App() {
     rounded: 0
   }
 
-  useEffect(()=>{
+ /*  useEffect(()=>{
     document.body.style.height = `${scrollContainer.current.getBoundingClientRect().height}px`
-  }, []);
+  }, []); */
 
   /* debounce */
-  useEffect(debounce(()=>{
+  useEffect(()=>{
     document.body.style.height = `${scrollContainer.current.getBoundingClientRect().height}px`;
-  },[size.height]),.1);
+  },[size.height]);
 
   useEffect(()=>{
     requestAnimationFrame(()=>skewScrolling())

@@ -4,11 +4,9 @@
     height: 100%;
     .hero__wrapper{
         text-align: center;
-       
+        
         .hero__content{
-            width: 90.5%;
-            margin: 0 auto;
-            max-width: 67.75em;
+            
 
             .content__wrapper {
                 position: relative;
@@ -29,13 +27,7 @@
 
 /* Small devices (portrait tablets and large phones, 570px and up) */
 @media only screen and (min-width: 570px) {
-    .hero{
-        
-        .hero__wrapper{
-            
-            
-        }
-    }
+    
 }
 
 /* Medium devices (landscape tablets, 767px and up) */
@@ -69,6 +61,9 @@
                     text-align: left;
                     margin-top: 2em;
                 }
+                .content__wrapper .paragraph{
+                    text-align: left;
+                }
             }
             .hero__img{
                 margin-top: 10em;
@@ -85,7 +80,9 @@
         
         .hero__wrapper{
             margin-bottom: -10em;
-            
+            width: 90.5%;
+        margin: 0 auto;
+        max-width: 67.75em;
         }
     }
 }

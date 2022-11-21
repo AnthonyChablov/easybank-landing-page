@@ -22,26 +22,21 @@
 
 /* Small devices (portrait tablets and large phones, 570px and up) */
 @media only screen and (min-width: 570px) {
-    .content-section{
-        padding-bottom: 5em;
-        
-        .content-section__paragraph{
-            width: 75%;
-            margin: 0 auto;
-
-        }
-        
-        .content-section__sub-paragraph{
-            width: 62%;
-            margin: 0 auto;
-        }
-        
-    }
+    
 }
 
 /* Medium devices (landscape tablets, 767px and up) */
 @media only screen and (min-width: 767px) {
-    
+    .content-section{
+        
+        
+        .content-section__paragraph .paragraph{
+            text-align: left;
+        }
+        
+        
+        
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */

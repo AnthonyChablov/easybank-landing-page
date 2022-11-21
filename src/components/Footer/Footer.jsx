@@ -26,7 +26,7 @@ const Footer = () => {
                         </div>
                         <div className="footer__icons">
                             {iconData.map((social)=>( 
-                                <div className="icons__link">
+                                <div key={social.iconName} className="icons__link">
                                     <a href={social.link}><Icon iconName={social.iconName}/></a>
                                 </div>
                             ))}
@@ -36,14 +36,14 @@ const Footer = () => {
                         <div className="footer__links">
                             <div className='links links--1'>
                                 {linkData.slice(0,3).map((link)=>( 
-                                    <div className="links__routes">
+                                    <div key={link.linkName} className="links__routes">
                                         <a href={link.link}>{link.linkName}</a>
                                     </div>
                                 ))}
                             </div>
                             <div className="links links--2">
                                 {linkData.slice(3).map((link)=>( 
-                                    <div className="links__routes">
+                                    <div key={link.linkName} className="links__routes">
                                         <a href={link.link}>{link.linkName}</a>
                                     </div>
                                 ))}

@@ -160,11 +160,6 @@
 .hero .hero__wrapper {
   text-align: center;
 }
-.hero .hero__wrapper .hero__content {
-  width: 90.5%;
-  margin: 0 auto;
-  max-width: 67.75em;
-}
 .hero .hero__wrapper .hero__content .content__wrapper {
   position: relative;
   top: -8em;
@@ -202,6 +197,9 @@
     text-align: left;
     margin-top: 2em;
   }
+  .hero .hero__wrapper .hero__content .content__wrapper .paragraph {
+    text-align: left;
+  }
   .hero .hero__wrapper .hero__img {
     margin-top: 10em;
     width: 48%;
@@ -211,6 +209,9 @@
 @media only screen and (min-width: 935px) {
   .hero .hero__wrapper {
     margin-bottom: -10em;
+    width: 90.5%;
+    margin: 0 auto;
+    max-width: 67.75em;
   }
 }
 /* Large devices (laptops/desktops, 1022px and up) */
@@ -247,7 +248,8 @@
   background-color: hsl(0deg, 0%, 98%);
   background-size: cover;
   position: relative;
-  top: -10vh;
+  top: -3vh;
+  padding-bottom: 2em;
 }
 .image--bg .image--bg__wrapper {
   position: relative;
@@ -276,30 +278,31 @@
     background-color: hsl(0deg, 0%, 98%);
     background-size: contain;
     left: 0em;
-    top: -12vh;
+    top: -9.5vh;
   }
   .image--bg .image--bg__wrapper {
     position: relative;
     top: 5vh;
-    left: 3vh;
+    left: 1vh;
   }
 }
 @media only screen and (min-width: 965px) {
   .image--bg {
     left: 0;
-    top: -11vh;
+    top: -9.5vh;
     background-color: transparent;
+    padding-bottom: 0;
   }
   .image--bg .image--bg__wrapper {
     top: 5vh;
-    left: 3vh;
+    left: 1vh;
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .image--bg {
     left: 0;
-    top: -13vh;
+    top: -4.5vh;
     position: relative;
     background-color: transparent;
   }
@@ -316,7 +319,6 @@
 @media only screen and (min-width: 1061px) {
   .image--bg {
     left: 0;
-    top: -6vh;
     background-color: transparent;
   }
   .image--bg .image--bg__wrapper {
@@ -363,20 +365,12 @@
 }
 
 /* Small devices (portrait tablets and large phones, 570px and up) */
-@media only screen and (min-width: 570px) {
-  .content-section {
-    padding-bottom: 5em;
-  }
-  .content-section .content-section__paragraph {
-    width: 75%;
-    margin: 0 auto;
-  }
-  .content-section .content-section__sub-paragraph {
-    width: 62%;
-    margin: 0 auto;
+/* Medium devices (landscape tablets, 767px and up) */
+@media only screen and (min-width: 767px) {
+  .content-section .content-section__paragraph .paragraph {
+    text-align: left;
   }
 }
-/* Medium devices (landscape tablets, 767px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .content-section .content-section__header {

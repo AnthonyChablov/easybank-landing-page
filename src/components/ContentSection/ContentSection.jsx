@@ -1,9 +1,10 @@
-import Header from "../Header/Header";
+
 import SubHeader from "../SubHeader/SubHeader";
 import SubSubHeader from "../SubSubHeader/SubSubHeader";
 import Paragraph from "../Paragraph/Paragraph";
 import Icon from "../Icon/Icon";
 
+const transition = { duration: 0.7, ease: [0.6, 0.01, -0.05, 0.9] };
 const ContentSection = () => {
   const data = [
     {
@@ -29,7 +30,15 @@ const ContentSection = () => {
   ]
   return (
     <div className="content-section ">
-      <div className="container">
+      <div className="container"
+        initial={{
+          filter:'opacity(0%)'
+        }}
+        animate={{
+          filter:'opacity(100%)',
+          transition :{delay : 0.4, ...transition}
+        }}
+      >
         <div className="content-section__header ">
           <SubHeader text={'Why choose Easybank?'}/>
         </div>
@@ -39,7 +48,7 @@ const ContentSection = () => {
         <div className="content-section__info">
           {data.map(
             (elem)=>(
-              <div className="info__wrapper">
+              <div key={elem.iconName} className="info__wrapper">
                 <div className="content-section__icon">
                   <Icon iconName={elem.iconName}/>
                 </div>

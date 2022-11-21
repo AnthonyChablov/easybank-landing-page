@@ -38,6 +38,7 @@ const Articles = () => {
             {data.slice(0,2).map(
               (cardData)=>(
                   <Card
+                    key={cardData.imgName}
                     imgName={cardData.imgName} 
                     author={cardData.author} 
                     header={cardData.header} 
@@ -51,6 +52,7 @@ const Articles = () => {
             {data.slice(2).map(
               (cardData)=>(
                   <Card
+                    key={cardData.imgName}
                     imgName={cardData.imgName} 
                     author={cardData.author} 
                     header={cardData.header} 

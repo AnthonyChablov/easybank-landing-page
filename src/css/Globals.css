@@ -155,6 +155,7 @@
 .hero {
   background-color: hsl(0deg, 0%, 98%);
   padding-bottom: 5em;
+  margin-bottom: -8em;
   height: 100%;
 }
 .hero .hero__wrapper {
@@ -163,16 +164,30 @@
 .hero .hero__wrapper .hero__content .content__wrapper {
   position: relative;
   top: -8em;
-  margin-bottom: -8em;
+  margin-bottom: -12em;
+  width: 90.5%;
+  margin: 0 auto;
+  max-width: 47.75em;
 }
 .hero .hero__wrapper .hero__content .content__button {
   margin-top: 2em;
 }
 
 /* Small devices (portrait tablets and large phones, 570px and up) */
+@media only screen and (min-width: 570px) {
+  .hero__content .content__wrapper {
+    position: relative;
+    top: -8em;
+    margin-bottom: -8em;
+  }
+  .hero__content .content__button {
+    margin-top: 2em;
+  }
+}
 /* Medium devices (landscape tablets, 767px and up) */
 @media only screen and (min-width: 767px) {
   .hero {
+    margin-bottom: 0;
     padding-bottom: 10em;
     /* container properties */
   }
@@ -183,7 +198,7 @@
     width: 90.5%;
     margin: 0 auto;
     max-width: 67.75em;
-    margin-bottom: -6em;
+    margin-bottom: -12em;
   }
   .hero .hero__wrapper .hero__content {
     padding: 10em 0 0em 0;
@@ -208,17 +223,14 @@
 /* 570px and up */
 @media only screen and (min-width: 935px) {
   .hero .hero__wrapper {
-    margin-bottom: -10em;
-    width: 90.5%;
-    margin: 0 auto;
-    max-width: 67.75em;
+    margin-bottom: -12em;
   }
 }
 /* Large devices (laptops/desktops, 1022px and up) */
 @media only screen and (min-width: 1022px) {
   .hero {
     height: auto;
-    padding-bottom: 3em;
+    padding-bottom: -14em;
     /* container properties */
   }
   .hero .hero__wrapper {
@@ -253,7 +265,7 @@
 }
 .image--bg .image--bg__wrapper {
   position: relative;
-  top: -2vh;
+  top: -10vh;
 }
 
 /* Small devices (portrait tablets and large phones, 570px and up) */
@@ -262,7 +274,7 @@
     background-position: 100%;
   }
   .image--bg .image--bg__wrapper {
-    top: -4.75vh;
+    top: -7.75vh;
   }
   .image .image__wrapper {
     height: 13.5em;
@@ -368,7 +380,7 @@
 /* Medium devices (landscape tablets, 767px and up) */
 @media only screen and (min-width: 767px) {
   .content-section .content-section__paragraph .paragraph {
-    text-align: left;
+    text-align: center;
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
@@ -382,6 +394,9 @@
     text-align: start;
     padding-bottom: 1.5em;
     margin: 0;
+  }
+  .content-section .content-section__paragraph .paragraph {
+    text-align: left;
   }
   .content-section .content-section__info {
     display: flex;

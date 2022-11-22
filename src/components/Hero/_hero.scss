@@ -1,17 +1,22 @@
 .hero{
     background-color: $VeryLightGray;
     padding-bottom: 5em; 
+    margin-bottom: -8em;
     height: 100%;
     .hero__wrapper{
         text-align: center;
         
         .hero__content{
-            
+           
 
             .content__wrapper {
                 position: relative;
                 top: -8em;
-                margin-bottom: -8em;
+                margin-bottom: -12em;
+                
+                width: 90.5%;
+                margin: 0 auto;
+                max-width: 47.75em;
             }
             .content__button{
                 
@@ -28,12 +33,27 @@
 /* Small devices (portrait tablets and large phones, 570px and up) */
 @media only screen and (min-width: 570px) {
     
+    .hero__content{
+        
+       
+
+        .content__wrapper {
+            position: relative;
+            top: -8em;
+            margin-bottom: -8em;
+        }
+        .content__button{
+            
+            margin-top: 2em;
+        }
+        
+    }
 }
 
 /* Medium devices (landscape tablets, 767px and up) */
 @media only screen and (min-width: 767px) {
     .hero{
-        
+        margin-bottom: 0;
         padding-bottom: 10em;
         
         /* container properties */
@@ -46,7 +66,7 @@
             margin: 0 auto;
             max-width: 67.75em;
             //
-            margin-bottom: -6em;
+            margin-bottom: -12em;
             
             .hero__content{
                 //
@@ -68,6 +88,7 @@
             .hero__img{
                 margin-top: 10em;
                 width: 48%;
+                
             }
             
         }
@@ -79,10 +100,8 @@
     .hero{
         
         .hero__wrapper{
-            margin-bottom: -10em;
-            width: 90.5%;
-        margin: 0 auto;
-        max-width: 67.75em;
+            margin-bottom: -12em;
+           
         }
     }
 }
@@ -93,7 +112,7 @@
 @media only screen and (min-width: 1022px) {
     .hero{
         height: auto;
-        padding-bottom:3em;
+        padding-bottom:-14em;
         
         /* container properties */
         

@@ -36,12 +36,12 @@ function App() {
     skewConfigs.rounded = Math.round(skewConfigs.previous * 100)/100;
     
     // variables
-    /* const difference = skewConfigs.current - skewConfigs.rounded;
+    const difference = skewConfigs.current - skewConfigs.rounded;
     const acceleration = difference / size.width;
     const velocity = +acceleration;
-    const skew = velocity * 1; // can change this value to adjust skew */
+    const skew = velocity * 0.25; // can change this value to adjust skew */
     // 
-    scrollContainer.current.style.transform = `translateY(-${skewConfigs.rounded}px) `;
+    scrollContainer.current.style.transform = `translateY(-${skewConfigs.rounded}px) skewY(${skew}deg)`;
 
     requestAnimationFrame(()=>skewScrolling());
   }

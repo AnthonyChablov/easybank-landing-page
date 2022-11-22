@@ -3,7 +3,6 @@ import Header from "../Header/Header";
 import Paragraph from "../Paragraph/Paragraph";
 import Button from "../Button/Button";
 
-const transition = { duration: 0.7, ease: [0.6, 0.01, -0.05, 0.9] };
 
 const hero = () => {
   return (
@@ -16,13 +15,7 @@ const hero = () => {
             </div>
             
             <div className="hero__content "
-                initial={{
-                    filter:'opacity(0%)'
-                }}
-                animate={{
-                    filter:'opacity(100%)',
-                    transition :{delay : 0.2, ...transition}
-                }}
+                
             >
                 <div className="content__wrapper">
                     <div className="content__header">

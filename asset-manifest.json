@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/easybank-landing-page/static/css/main.c68c98ad.css",
-    "main.js": "/easybank-landing-page/static/js/main.6a1661c0.js",
+    "main.css": "/easybank-landing-page/static/css/main.7cf46dc7.css",
+    "main.js": "/easybank-landing-page/static/js/main.6f2b049d.js",
     "static/js/787.b5be22d5.chunk.js": "/easybank-landing-page/static/js/787.b5be22d5.chunk.js",
     "static/media/image-currency.jpg": "/easybank-landing-page/static/media/image-currency.1b385bf9f62bf25ef22d.jpg",
     "static/media/image-restaurant.jpg": "/easybank-landing-page/static/media/image-restaurant.1951b57675babfd83c6c.jpg",
@@ -24,12 +24,12 @@
     "static/media/icon-facebook.svg": "/easybank-landing-page/static/media/icon-facebook.1e9b33385e6dfe7a61acbff13373209c.svg",
     "static/media/icon-close.svg": "/easybank-landing-page/static/media/icon-close.c2e36e0469b3b1e6c27328356ce18aed.svg",
     "static/media/icon-hamburger.svg": "/easybank-landing-page/static/media/icon-hamburger.b0d311feac968ee5feab7333de091d7f.svg",
-    "main.c68c98ad.css.map": "/easybank-landing-page/static/css/main.c68c98ad.css.map",
-    "main.6a1661c0.js.map": "/easybank-landing-page/static/js/main.6a1661c0.js.map",
+    "main.7cf46dc7.css.map": "/easybank-landing-page/static/css/main.7cf46dc7.css.map",
+    "main.6f2b049d.js.map": "/easybank-landing-page/static/js/main.6f2b049d.js.map",
     "787.b5be22d5.chunk.js.map": "/easybank-landing-page/static/js/787.b5be22d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c68c98ad.css",
-    "static/js/main.6a1661c0.js"
+    "static/css/main.7cf46dc7.css",
+    "static/js/main.6f2b049d.js"
   ]
 }
